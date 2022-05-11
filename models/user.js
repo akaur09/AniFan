@@ -29,3 +29,5 @@ User.init(
         }
     }
 )
+
+modeule.exports = User;
