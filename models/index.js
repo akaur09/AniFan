@@ -34,3 +34,5 @@ Comment.belongsTo(User,{
 Comment.belongsTo(Review, {
     foreignKey: 'user_id'
 });
+
+module.exports = {Review, Comment, User, Anime};

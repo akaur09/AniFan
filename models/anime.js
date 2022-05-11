@@ -29,3 +29,5 @@ Anime.init(
         modelName: 'anime'
     }
 )
+
+module.exports = Anime;
