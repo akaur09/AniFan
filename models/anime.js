@@ -11,7 +11,7 @@ Anime.init(
             autoIncrement: true
         },
         title:{
-            type: DataTypes.String,
+            type: DataTypes.STRING,
             allowNull: false
         },
         user_id: {
@@ -21,12 +21,30 @@ Anime.init(
                 key: 'id'
             }
         },
-        synopsis: {},
-        genre: {},
-        episode_count: {},
-        status:{},
-        age_rating:{},
-        studio:{}
+        synopsis: {
+            type: DataTypes.TEXT,
+            allowNull:false
+        },
+        genre: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        episode_count: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+        },
+        status:{
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        age_rating:{
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        studio:{
+            type: DataTypes.STRING,
+            allowNull: false
+        }
     },
     {
         sequelize,
