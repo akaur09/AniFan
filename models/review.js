@@ -6,13 +6,13 @@ class Review extends Model{}
 Review.init(
     {
         id: {
-            typpe: DataTypes.INTEGER,
+            type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
             autoIncrement: true
         },
         title: {
-            type: Datatypes.STRING,
+            type: DataTypes.STRING,
             allowNull: false
         },
         review_text: {

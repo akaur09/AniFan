@@ -54,5 +54,5 @@ Anime.init(
         modelName: 'anime'
     }
 )
-
+// add validations
 module.exports = Anime;
