@@ -30,4 +30,4 @@ User.init(
     }
 )
 
-modeule.exports = User;
+module.exports = User;

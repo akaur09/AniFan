@@ -35,4 +35,4 @@ Comment.belongsTo(Review, {
     foreignKey: 'user_id'
 });
 
-modeule.exports = {Review, Comment, User, Anime};
+module.exports = {Review, Comment, User, Anime};

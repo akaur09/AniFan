@@ -42,4 +42,4 @@ Review.init(
     }
 )
 
-modeule.exports = Review;
+module.exports = Review;

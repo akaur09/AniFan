@@ -30,4 +30,4 @@ Anime.init(
     }
 )
 
-modeule.exports = Anime;
+module.exports = Anime;
