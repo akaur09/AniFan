@@ -3,6 +3,6 @@ const { Comment } = require("../models/comment");
 
 const comment =[];
 
-const Comment = () => Comment.bulkCreate(comment);
+const seedComments = () => Comment.bulkCreate(comment);
 
-module.exports = Comment
+module.exports = seedComments
