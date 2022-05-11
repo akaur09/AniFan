@@ -20,7 +20,13 @@ Anime.init(
                 model: 'user',
                 key: 'id'
             }
-        }
+        },
+        synopsis: {},
+        genre: {},
+        episode_count: {},
+        status:{},
+        age_rating:{},
+        studio:{}
     },
     {
         sequelize,
