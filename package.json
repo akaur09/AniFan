@@ -19,7 +19,14 @@
   },
   "homepage": "https://github.com/akaur09/project-two-be-named#readme",
   "dependencies": {
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.3",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "request": "^2.88.2"
+    "express-handlebars": "^6.0.5",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.19.0"
   }
 }
