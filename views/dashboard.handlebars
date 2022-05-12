@@ -1,0 +1,17 @@
+{{#if reviews.length}}
+<section>
+    <h2>Your Reviews</h2>
+    <ol class="review-list">
+        {{#each reviews as |review|}}
+        <li>
+            {{> dashboard-review-info review}}
+        </li>
+        {{/each}}
+    </ol>
+</section>   
+{{else}}
+    <section>
+        <h3> No Reviews Written</h3>
+    </section>
+{{/if}}
+<button type="submit"><a href="/dasboard/create">Add New Review</a></button>
