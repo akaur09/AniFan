@@ -6,3 +6,4 @@ const sequelize = require('../config/connection');
 
 
 module.exports = router;
+// Amnider
