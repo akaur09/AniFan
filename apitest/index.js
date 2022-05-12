@@ -36,7 +36,9 @@ searchBtn.addEventListener("click", function () {
 
     // firstApiCall(animeName);
 
-    trendingAnime();
+    // trendingAnime();
+
+    years();
 });
 
 function firstApiCall(animeName) {
@@ -77,3 +79,79 @@ async function trendingAnime() {
     // console.log(titleTestArr);
     // console.log(imageTestArr);
 };
+
+const getyearFormHandler = async (event) => {
+    event.preventDefault();
+
+    const checkbox1 = document.querySelector('#checkbox1').checked;
+    const checkbox2 = document.querySelector('#checkbox2').checked;
+    const checkbox3 = document.querySelector('#checkbox3').checked;
+    
+
+    if (checkbox1) {
+        console.log("checkbox1");
+
+        let counter1 = 1929;
+        let years1 = []
+    
+        for (let i = 0; i < 10; i++) {
+            counter1++;
+            let year1 = counter1.toString();
+            years1.push(year1);
+        };
+    
+        console.log(years1);
+        const randomElement1 = years1[Math.floor(Math.random() * years1.length)];
+        console.log(randomElement1);
+        JSON.stringify(randomElement1);
+
+        const response1 = await fetch(`https://kitsu.io/api/edge/anime?filter[seasonYear]=${randomElement1}&page[limit]=1&page[offset]=0`);
+        const data1 = await response1.json();
+        console.log(data1);
+        
+    } else if(checkbox2) {
+        console.log("checkbox2");
+
+        let counter2 = 1939;
+        let years2 = []
+    
+        for (let i = 0; i < 40; i++) {
+            counter2++;
+            let year2 = counter2.toString();
+            years2.push(year2);
+        }
+    
+        console.log(years2);
+        const randomElement2 = years2[Math.floor(Math.random() * years2.length)];
+        console.log(randomElement2);
+        JSON.stringify(randomElement2);
+
+        const response2 = await fetch(`https://kitsu.io/api/edge/anime?filter[seasonYear]=${randomElement2}&page[limit]=1&page[offset]=0`);
+        const data2 = await response2.json();
+        console.log(data2);
+
+    } else if (checkbox3) {
+        console.log("checkbox3");
+
+        let counter3 = 1979;
+        let years3 = []
+    
+        for (let i = 0; i < 43; i++) {
+            counter3++;
+            let year3 = counter3.toString();
+            years3.push(year3);
+        }
+    
+        console.log(years3);
+        const randomElement3 = years3[Math.floor(Math.random() * years3.length)];
+        console.log(randomElement3);
+        JSON.stringify(randomElement3);
+
+        const response3 = await fetch(`https://kitsu.io/api/edge/anime?filter[seasonYear]=${randomElement3}&page[limit]=1&page[offset]=0`);
+        const data3 = await response3.json();
+        console.log(data3);
+
+    }
+};
+
+document.querySelector('#recommenFormSubmitBtn').addEventListener('click', getyearFormHandler);
