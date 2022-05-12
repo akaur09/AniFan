@@ -1,0 +1,17 @@
+<article>
+    <h2>Edit Review</h2>
+    <form class="edit-review-form">
+        <div>
+            <input type="text" name="review-title" value="{{review.title}}">
+        </div>
+        <div>
+           <label for="review-text">Review</label>
+           <textarea id="review-test" name="review-text">{{review.review_text}}</textarea>
+        </div>
+        <button type="submit"> Save Edits</button>
+        <button type="button" class="del-rev-btn">Delete Review</button>
+    </form>
+</article>
+
+<script src="/public/js/editReviewData.js"></script>
+<script src="/public/js/deleteReviewData.js"></script>
