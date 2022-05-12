@@ -16,7 +16,6 @@
     <nav class="bg-gray-500  px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
         <div class="container flex flex-wrap justify-between items-center mx-auto">
           <a href="https://flowbite.com" class="flex items-center">
-              <!-- <img src="/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" /> -->
               <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">AniFan</span>
           </a>
           <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu" aria-expanded="false">
@@ -52,251 +51,182 @@
     <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
       <!--Card 1-->
       <div class="rounded overflow-hidden shadow-lg">
-        <!-- <img class="w-full" src="/river.jpg" alt="River"> -->
         <div class="px-6 py-4">
-          <!-- <div class="font-bold text-xl mb-2">River</div> -->
           <div class="block">
             <span class="text-gray-700">Genres</span>
             <div class="mt-2">
               <div>
-                <label class="inline-flex items-center">
-                  <input type="checkbox" class="form-checkbox">
+                <label class="inline-flex items-center" for="genre">
+                  <input name="genre" id="action" type="radio" class="form-radio">
                   <span class="ml-2">Action</span>
                 </label>
               </div>
               <div>
-                <label class="inline-flex items-center">
-                  <input type="checkbox" class="form-checkbox">
+                <label class="inline-flex items-center" for="genre">
+                  <input name="genre" id="comedy" type="radio" class="form-radio">
                   <span class="ml-2">Comedy</span>
                 </label>
               </div>
               <div>
-                <label class="inline-flex items-center">
-                  <input type="checkbox" class="form-checkbox">
+                <label class="inline-flex items-center" for="genre">
+                  <input name="genre" id="fantasy" type="radio" class="form-radio">
                   <span class="ml-2">Fantasy</span>
                 </label>
               </div>
               <div>
-                <label class="inline-flex items-center">
-                  <input type="checkbox" class="form-checkbox">
+                <label class="inline-flex items-center" for="genre">
+                  <input name="genre" id="romance" type="radio" class="form-radio">
                   <span class="ml-2">Romance</span>
                 </label>
               </div>
               <div>
-                <label class="inline-flex items-center">
-                  <input type="checkbox" class="form-checkbox">
+                <label class="inline-flex items-center" for="genre">
+                  <input name="genre" id="sifi" type="radio" class="form-radio">
                   <span class="ml-2">Science Fiction</span>
                 </label>
               </div>
               <div>
-                <label class="inline-flex items-center">
-                  <input type="checkbox" class="form-checkbox">
-                  <span class="ml-2">Super Power</span>
+                <label class="inline-flex items-center" for="genre" >
+                  <input name="genre" id="slice-of-life" type="radio" class="form-radio">
+                  <span class="ml-2">Slice of life</span>
+                </label>
+              </div>
+              <div>
+                <label class="inline-flex items-center" for="genre">
+                  <input name="genre" type="radio" class="form-radio">
+                  <span class="ml-2">horror</span>
                 </label>
               </div>
             </div>
+            <div>
+              <label class="inline-flex items-center" for="genre">
+                <input name="genre" type="radio" class="form-radio">
+                <span class="ml-2">Mystery</span>
+              </label>
+            </div>
+          </div>
+          <div>
+            <label class="inline-flex items-center" for="genre" >
+              <input name="genre" type="radio" class="form-radio">
+              <span class="ml-2">Sports</span>
+            </label>
+          </div>
+          <div>
+            <label class="inline-flex items-center" for="genre">
+              <input name="genre" type="radio" class="form-radio">
+              <span class="ml-2">Adventure</span>
+            </label>
+          </div>
+          <div>
+            <label class="inline-flex items-center" for="genre">
+              <input name="genre" type="radio" class="form-radio">
+              <span class="ml-2">Drama</span>
+            </label>
           </div>
         </div>
-        <!-- <div class="px-6 pt-4 pb-2">
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#summer</span>
-        </div> -->
+
       </div>
       <!--Card 2-->
       <div class="rounded overflow-hidden shadow-lg">
-        <!-- <img class="w-full" src="/river.jpg" alt="River"> -->
         <div class="px-6 py-4">
-          <!-- <div class="font-bold text-xl mb-2">River</div> -->
           <div class="block">
             <span class="text-gray-700">Rating</span>
             <div class="mt-2">
               <div>
-                <label class="inline-flex items-center">
-                  <input type="checkbox" class="form-checkbox" checked>
+                <label class="inline-flex items-center" for="rating">
+                  <input name="rating" type="radio" class="form-radio" checked>
                   <span class="ml-2">All</span>
                 </label>
               </div>
               <div>
-                <label class="inline-flex items-center">
-                  <input type="checkbox" class="form-checkbox">
+                <label class="inline-flex items-center" for="rating">
+                  <input name="rating" type="radio" class="form-radio">
                   <span class="ml-2">PG</span>
                 </label>
               </div>
               <div>
-                <label class="inline-flex items-center">
-                  <input type="checkbox" class="form-checkbox">
+                <label class="inline-flex items-center" for="rating">
+                  <input name="rating" type="radio" class="form-radio">
                   <span class="ml-2">R</span>
                 </label>
               </div>
             </div>
           </div>
         </div>
-        <!-- <div class="px-6 pt-4 pb-2">
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#summer</span>
-        </div> -->
+
       </div>
   
       <!--Card 3-->
       <div class="rounded overflow-hidden shadow-lg">
-        <!-- <img class="w-full" src="/forest.jpg" alt="Forest"> -->
         <div class="px-6 py-4">
-          <!-- <div class="font-bold text-xl mb-2">Forest</div> -->
           <div class="block">
-            <span class="text-gray-700">Air Status</span>
+            <span class="text-gray-700">season</span>
             <div class="mt-2">
               <div>
-                <label class="inline-flex items-center">
-                  <input type="checkbox" class="form-checkbox">
-                  <span class="ml-2">Current</span>
+                <label class="inline-flex items-center" for="season" >
+                  <input name="season" type="radio" class="form-radio" checked>
+                  <span class="ml-2">All</span>
                 </label>
               </div>
               <div>
-                <label class="inline-flex items-center">
-                  <input type="checkbox" class="form-checkbox">
-                  <span class="ml-2">Finished</span>
+                <label class="inline-flex items-center" for="season">
+                  <input name="season" type="radio" class="form-radio">
+                  <span class="ml-2">Spring</span>
                 </label>
               </div>
               <div>
-                <label class="inline-flex items-center">
-                  <input type="checkbox" class="form-checkbox">
-                  <span class="ml-2">Tba</span>
+                <label class="inline-flex items-center" for="season">
+                  <input name="season" type="radio" class="form-radio">
+                  <span class="ml-2">Summer</span>
                 </label>
               </div>
               <div>
-                <label class="inline-flex items-center">
-                  <input type="checkbox" class="form-checkbox">
-                  <span class="ml-2">Unreleased</span>
+                <label class="inline-flex items-center" for="season">
+                  <input name="season" type="radio" class="form-radio">
+                  <span class="ml-2">Fall</span>
                 </label>
               </div>
               <div>
-                <label class="inline-flex items-center">
-                  <input type="checkbox" class="form-checkbox">
-                  <span class="ml-2">Upcoming</span>
+                <label class="inline-flex items-center" for="season">
+                  <input name="season" type="radio" class="form-radio">
+                  <span class="ml-2">Winter</span>
                 </label>
               </div>
             </div>
           </div>
         </div>
-        <!-- <div class="px-6 pt-4 pb-2">
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#fall</span>
-        </div> -->
       </div>
       
-      <!-- <div class="rounded overflow-hidden shadow-lg">
+      <div class="rounded overflow-hidden shadow-lg">
         <div class="px-6 py-4">
           <div class="block">
-            <span class="text-gray-700">Checkboxes</span>
+            <span class="text-gray-700">Year</span>
             <div class="mt-2">
               <div>
                 <label class="inline-flex items-center">
-                  <input type="checkbox" class="form-checkbox" checked>
-                  <span class="ml-2">Option 1</span>
+                  <input type="radio" class="form-radio">
+                  <span class="ml-2">Ealier than 1940</span>
                 </label>
               </div>
               <div>
                 <label class="inline-flex items-center">
-                  <input type="checkbox" class="form-checkbox">
-                  <span class="ml-2">Option 2</span>
+                  <input type="radio" class="form-radio">
+                  <span class="ml-2">1940-1980</span>
                 </label>
               </div>
               <div>
                 <label class="inline-flex items-center">
-                  <input type="checkbox" class="form-checkbox">
-                  <span class="ml-2">Option 3</span>
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="rounded overflow-hidden shadow-lg">
-        <div class="px-6 py-4">
-          <div class="block it">
-            <span class="text-gray-700">Checkboxes</span>
-            <div class="mt-2">
-              <div>
-                <label class="inline-flex items-center">
-                  <input type="checkbox" class="form-checkbox" checked>
-                  <span class="ml-2">Option 1</span>
-                </label>
-              </div>
-              <div>
-                <label class="inline-flex items-center">
-                  <input type="checkbox" class="form-checkbox">
-                  <span class="ml-2">Option 2</span>
-                </label>
-              </div>
-              <div>
-                <label class="inline-flex items-center">
-                  <input type="checkbox" class="form-checkbox">
-                  <span class="ml-2">Option 3</span>
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="rounded overflow-hidden shadow-lg">
-        <div class="px-6 py-4">
-          <div class="block it">
-            <span class="text-gray-700">Checkboxes</span>
-            <div class="mt-2">
-              <div>
-                <label class="inline-flex items-center">
-                  <input type="checkbox" class="form-checkbox" checked>
-                  <span class="ml-2">Option 1</span>
-                </label>
-              </div>
-              <div>
-                <label class="inline-flex items-center">
-                  <input type="checkbox" class="form-checkbox">
-                  <span class="ml-2">Option 2</span>
-                </label>
-              </div>
-              <div>
-                <label class="inline-flex items-center">
-                  <input type="checkbox" class="form-checkbox">
-                  <span class="ml-2">Option 3</span>
+                  <input type="radio" class="form-radio">
+                  <span class="ml-2">1980-current</span>
                 </label>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div> -->
-
-  
-  
-  <div class="relative pt-1">
-    <label for="customRange1" class="form-label">Example range</label>
-    <input
-      type="range"
-      class="
-        form-range
-        appearance-none
-        w-full
-        h-6
-        p-0
-        bg-transparent
-        focus:outline-none focus:ring-0 focus:shadow-none
-      "
-      min="1"
-      max="100"
-      id="customRange1"
-    />
-  </div>
-
 
   <script src="/public/js/logout.js"></script>
+  <script src="/public/js/filter.js"></script>
 
 </body>
 </html>
