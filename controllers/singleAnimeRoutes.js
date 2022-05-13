@@ -9,14 +9,15 @@ router.get('/', async (req, res) => {
         const response = await axios.get(`https://kitsu.io/api/edge/anime?filter[text]=naruto&page[limit]=1`);
 
         const singleAnime = await response.data;
-        console.log(singleAnime)
 
-        const anime = singleAnime.data[0];
+        const anime = await singleAnime.data[0].attributes;
+        console.log(anime.synopsis)
 
         res.render('single-anime', {
             anime,
-            // logged_in: req.session.logged_in
+            logged_in: req.session.logged_in
         });
+        // res.json(anime.synopsis)
 
     } catch (err) {
         res.status(500).json(err);
