@@ -196,9 +196,10 @@ const recommendMe = async (event) => {
     const ageRating = document.querySelector('input[name="ageRating"]:checked').value;
     const animeGenre = document.querySelector('input[name="animeGenre"]:checked').value;
     const animeSeason = document.querySelector('input[name="animeSeason"]:checked').value;
-    const animeYears = document.querySelector('input[name="animeYears"]:checked').value;
+    // const animeYears = document.querySelector('input[name="animeYears"]:checked').value;
     
-    const fetchUrl = `https://kitsu.io/api/edge/anime?&filter[categories]=${animeGenre}&filter[ageRating]=${ageRating}&filter[season]=${animeSeason}&filter[seasonYear]=${animeYears}`
+    // const fetchUrl = `https://kitsu.io/api/edge/anime?&filter[categories]=${animeGenre}&filter[ageRating]=${ageRating}&filter[season]=${animeSeason}&filter[seasonYear]=${animeYears}`
+    const fetchUrl = `https://kitsu.io/api/edge/anime?&filter[categories]=${animeGenre}&filter[ageRating]=${ageRating}&filter[season]=${animeSeason}`
 
     console.log(fetchUrl);
     // if (ageRating !== )
