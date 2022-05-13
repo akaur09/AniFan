@@ -67,22 +67,101 @@
             </form> -->
 
             <form>
-              <legend>Choose your anime's date range:</legend>
+              <fieldset>
+                <legend>Choose your anime's age rating. At least one must be chosen.</legend>
           
-              <div>
-                <input type="radio" id="checkbox1" name="animeYears">
-                <label for="animeYears">less than 1940</label>
-              </div>
-          
-              <div>
-                <input type="radio" id="checkbox2" name="animeYears">
-                <label for="animeYears">1940 - 1980</label>
-              </div>
+                  <input type="radio" id="ratingG" name="ageRating" value="G">
+                  <label for="ageRating">G</label>
+                  <br>
+                  <input type="radio" id="ratingPG" name="ageRating" value="PG">
+                  <label for="ageRating">PG</label>
+                  <br>
+                  <input type="radio" id="ratingR" name="ageRating" value="R">
+                  <label for="ageRating">R</label>
+                  <br>
+                  <!-- <input type="radio" id="ageRatingAllBtn" name="ageRating" value="allRating">
+                  <label for="ageRating">All of the above</label> -->
 
-              <div>
-                <input type="radio" id="checkbox3" name="animeYears">
+              </fieldset>
+              
+              <fieldset>
+              <legend>Choose your anime's genre. At least one must be chosen.</legend>
+          
+        
+                <input type="radio" id="actionBtn" name="animeGenre" value="action">
+                <label for="animeGenre">Action</label>
+                <br>
+                <input type="radio" id="comedyBtn" name="animeGenre" value="comedy">
+                <label for="animeGenre">Comedy</label>
+                <br>
+                <input type="radio" id="fantasyBtn" name="animeGenre" value="fantasy">
+                <label for="animeGenre">Fantasy</label>
+                <br>
+                <input type="radio" id="romanceBtn" name="animeGenre" value="romance">
+                <label for="animeGenre">Romance</label>
+                <br>
+                <!-- <input type="radio" id="sciFiBtn" name="animeGenre" value="">
+                <label for="animeGenre">Science Fiction</label>
+                <br> -->
+                <input type="radio" id="sliceOfLifeBtn" name="animeGenre" value="slice of life">
+                <label for="animeGenre">Slice of life</label>
+                <br>
+                <input type="radio" id="horrorBtn" name="animeGenre" value="horror">
+                <label for="animeGenre">Horror</label>
+                <br>
+                <input type="radio" id="mysteryBtn" name="animeGenre" value="mystery">
+                <label for="animeGenre">Mystery</label>
+                <br>
+                <input type="radio" id="sportsBtn" name="animeGenre" value="sports">
+                <label for="animeGenre">Sports</label>
+                <br>
+                <input type="radio" id="adventureBtn" name="animeGenre" value="adventure">
+                <label for="animeGenre">Adventure</label>
+                <br>
+                <input type="radio" id="dramaBtn" name="animeGenre" value="drama">
+                <label for="animeGenre">Drama</label>
+                <br>
+                <!-- <input type="radio" id="genreAllBtn" name="animeGenre" value="allGenre">
+                <label for="animeGenre">All of the above</label> -->
+              
+            </fieldset>
+
+              <fieldset>
+                <legend>Choose your anime's season. At least one must be chosen.</legend>
+            
+
+                  <input type="radio" id="springBtn" name="animeSeason" value="spring">
+                  <label for="animeSeason">Spring</label>
+                  <br>
+                  <input type="radio" id="summerBtn" name="animeSeason" value="summer">
+                  <label for="animeSeason">Summer</label>
+                  <br>
+                  <input type="radio" id="fallBtn" name="animeSeason" value="fall">
+                  <label for="animeSeason">Fall</label>
+                  <br>
+                  <input type="radio" id="winterBtn" name="animeSeason" value="winter">
+                  <label for="animeSeason">Winter</label>
+                  <br>
+                  <!-- <input type="radio" id="seasonAllBtn" name="animeSeason" value="allSeason">
+                  <label for="animeSeason">All of the above</label> -->
+              </fieldset>
+
+            <fieldset>
+              <legend>Choose your anime's date range. At least one must be chosen.</legend>
+          
+
+                <input type="radio" id="earlyDateBtn" name="animeYears" value="early">
+                <label for="animeYears">less than 1940</label>
+                <br>
+                <input type="radio" id="midDateBtn" name="animeYears" value="middle">
+                <label for="animeYears">1940 - 1980</label>
+                <br>
+                <input type="radio" id="newDateBtn" name="animeYears" value="later">
                 <label for="animeYears">greater than 1980</label>
-              </div>
+                <br>
+                <!-- <input type="radio" id="dateAllBtn" name="animeYears" value="allYears">
+                <label for="animeYears">All of the above</label> -->
+              </fieldset>
 
               <button type="submit" value="Submit" id="recommenFormSubmitBtn">Submit</button>
             </form>
