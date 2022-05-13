@@ -66,4 +66,3 @@ router.post('/logout',(req, res)=>{
 })
 
 module.exports = router;
-//Alex did these.. dont touch

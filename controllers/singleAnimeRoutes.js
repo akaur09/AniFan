@@ -15,32 +15,12 @@ router.get('/', async (req, res) => {
 
         res.render('single-anime', {
             anime,
-            // logged_in: req.session.logged_in
+            logged_in: req.session.logged_in
         });
-        // res.json(anime.synopsis)
 
     } catch (err) {
         res.status(500).json(err);
     }
 });
-
-// router.get('/', async (req, res) => {
-//     try {
-//         const response = await axios.get('https://kitsu.io/api/edge/trending/anime');
-
-//         const trendingAnime = await response.data;
-
-//         const animes = trendingAnime.data;
-
-//         // res.render('single-anime', {
-//         //     animes,
-//         //     // logged_in: req.session.logged_in
-//         // });
-//         res.json(animes[0])
-
-//     } catch (err) {
-//         res.status(500).json(err);
-//     }
-// })
 
 module.exports = router;

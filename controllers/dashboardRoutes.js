@@ -15,14 +15,6 @@ router.get('/', withAuth, (req,res) => {
                 model: User,
                 attributes: ['username']
             }
-            // {
-            //     // model: Comment,
-            //     // attributes: ['id','comment_text','review_id','user_id'],
-            //     // include: {
-            //     //     model: User,
-            //     //     attributes: ['username']
-            //     // }
-            // }
         ]
     })
     .then(dbReviewData =>{
@@ -46,14 +38,6 @@ router.get('/edit/:id', withAuth, (req,res)=> {
                 model: User,
                 attributes: ['username']
             }
-            // {
-            //     // model: Comment,
-            //     // attributes: ['id','comment_text','review_id','user_id'],
-            //     // include: {
-            //     //     model: User,
-            //     //     attributes: ['username']
-            //     // }
-            // }
         ]
     })
     .then(dbReviewData =>{
@@ -77,4 +61,3 @@ router.get('/create', withAuth, (req,res) =>{
 })
 
 module.exports = router;
-// Amnider
