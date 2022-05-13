@@ -1,5 +1,5 @@
-<form class="grid grid-cols-1 gap-4 justify-items-center">
-    <fieldset class="px-6 border-4 border-emerald-600 w-120">
+<form>
+    <fieldset class="px-6 border-4 border-emerald-600 w-120 m-10">
         <legend>Choose your anime's age rating. At least one must be chosen.</legend>
         <div class="flex items-center mb-4">
             <input id="ratingG" type="radio" name="ageRating" value="G" class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
@@ -113,27 +113,9 @@
         </div>
     </fieldset>
     
-    <fieldset class="px-6 border-4 border-emerald-600 w-120">
-        <legend>Choose your anime's date range. At least one must be chosen.</legend>
-        <div class="flex items-center mb-4">
-            <input id="earlyDateBtn" type="radio" name="animeYears" value="early" class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
-            <label for="animeYears" class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-            less than 1940
-            </label>
-        </div>
-        <div class="flex items-center mb-4">
-            <input id="midDateBtn" type="radio" name="animeYears" value="middle" class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600">
-            <label for="animeYears" class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-            1940 - 1980
-            </label>
-        </div>
-        <div class="flex items-center mb-4">
-            <input id="newDateBtn" type="radio" name="animeYears" value="later" class="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:bg-gray-700 dark:border-gray-600">
-            <label for="animeYears" class="block ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-            greater than 1980
-            </label>
-        </div>
-    </fieldset>
 
-     <button type="submit" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-10">Submit</button>
+
+     <button id="recommenFormSubmitBtn" type="submit" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-10">Submit</button>
 </form>
+
+<script src="/js/recommendation.js"></script>
