@@ -86,26 +86,32 @@ const getyearFormHandler = async (event) => {
     const checkbox1 = document.querySelector('#checkbox1').checked;
     const checkbox2 = document.querySelector('#checkbox2').checked;
     const checkbox3 = document.querySelector('#checkbox3').checked;
+
+    const actionGenre = document.querySelector('#checkbox3').checked;
     
 
     if (checkbox1) {
         console.log("checkbox1");
 
-        let counter1 = 1929;
-        let years1 = []
+        // let counter1 = 1929;
+        // let years1 = []
     
-        for (let i = 0; i < 10; i++) {
-            counter1++;
-            let year1 = counter1.toString();
-            years1.push(year1);
-        };
+        // for (let i = 0; i < 10; i++) {
+        //     counter1++;
+        //     let year1 = counter1.toString();
+        //     years1.push(year1);
+        // };
     
-        console.log(years1);
-        const randomElement1 = years1[Math.floor(Math.random() * years1.length)];
-        console.log(randomElement1);
-        JSON.stringify(randomElement1);
+        // console.log(years1);
+        // const randomElement1 = years1[Math.floor(Math.random() * years1.length)];
+        // console.log(randomElement1);
+        // JSON.stringify(randomElement1);
 
-        const response1 = await fetch(`https://kitsu.io/api/edge/anime?filter[seasonYear]=${randomElement1}&page[limit]=1&page[offset]=0`);
+        // const category = "action"
+
+        // const response1 = await fetch(`https://kitsu.io/api/edge/anime?filter[seasonYear]=${randomElement1}&filter[categories]=${category}`);
+        // const response1 = await fetch(`https://kitsu.io/api/edge/anime?include=%5Bcategories%5D`);
+        const response1 = await fetch(`https://kitsu.io/api/edge/anime?filter[seasonYear]=2015&filter[categories]=action`);
         const data1 = await response1.json();
         console.log(data1);
         
@@ -154,4 +160,61 @@ const getyearFormHandler = async (event) => {
     }
 };
 
-document.querySelector('#recommenFormSubmitBtn').addEventListener('click', getyearFormHandler);
+
+
+// const actionBtn = document.querySelector("#actionBtn").checked;
+// const comedyBtn = document.querySelector("#comedyBtn").checked;
+// const fantasyBtn = document.querySelector("#fantasyBtn").checked;
+// const romanceBtn = document.querySelector("#romanceBtn").checked;
+// const sciFiBtn = document.querySelector("#sciFiBtn").checked;
+// const sliceOfLifeBtn = document.querySelector("#sliceOfLifeBtn").checked;
+// const horrorBtn = document.querySelector("#horrorBtn").checked;
+// const mysteryBtn = document.querySelector("#mysteryBtn").checked;
+// const sportsBtn = document.querySelector("#sportsBtn").checked;
+// const adventureBtn = document.querySelector("#adventureBtn").checked;
+// const dramaBtn = document.querySelector("#dramaBtn").checked;
+// const genreAllBtn = document.querySelector("#genreAllBtn").checked;
+
+// const ratingPGBtn = document.querySelector("#ratingPG").checked;
+// const ratingGBtn = document.querySelector("#ratingG").checked;
+// const ratingRBtn = document.querySelector("#ratingR").checked;
+// const ageRatingAllBtn = document.querySelector("#ageRatingAllBtn").checked;
+
+// const springBtn = document.querySelector("#springBtn").checked;
+// const summerBtn = document.querySelector("#summerBtn").checked;
+// const fallBtn = document.querySelector("#fallBtn").checked;
+// const winterBtn = document.querySelector("#winterBtn").checked;
+// const seasonAllBtn = document.querySelector("#seasonAllBtn").checked;
+
+// const earlyDateBtn = document.querySelector("#earlyDateBtn").checked;
+// const midDateBtn = document.querySelector("#midDateBtn").checked;
+// const newDateBtn = document.querySelector("#newDateBtn").checked;
+// const dateAllBtn = document.querySelector("#dateAllBtn").checked;
+
+const recommendMe = async (event) => {
+    event.preventDefault();
+    const ageRating = document.querySelector('input[name="ageRating"]:checked').value;
+    const animeGenre = document.querySelector('input[name="animeGenre"]:checked').value;
+    const animeSeason = document.querySelector('input[name="animeSeason"]:checked').value;
+    const animeYears = document.querySelector('input[name="animeYears"]:checked').value;
+    
+    const fetchUrl = `https://kitsu.io/api/edge/anime?&filter[categories]=${animeGenre}&filter[ageRating]=${ageRating}&filter[season]=${animeSeason}&filter[seasonYear]=${animeYears}`
+
+    console.log(fetchUrl);
+    // if (ageRating !== )
+    //     fetchUrl += '&filter[categories]=${*whatever they selected*}' 
+    // if (ratingPGBtn || ratingGBtn || ratingRBtn)
+    //     fetchUrl +=  '&filter[ageRating]=${*whatever they selected*}'
+    // if (springBtn || summerBtn || fallBtn || winterBtn)
+    //     fetchUrl +=  '&filter[season]=${*whatever they selected*}'
+    // if (earlyDateBtn || midDateBtn || newDateBtn)
+    //     fetchUrl +=  '&filter[seasonYear]=${*whatever they selected*}'
+
+    const response = await fetch(fetchUrl);
+
+    const recommendedAnime = await response.json();
+
+    console.log(recommendedAnime);
+};
+    
+document.querySelector('#recommenFormSubmitBtn').addEventListener('click', recommendMe);
