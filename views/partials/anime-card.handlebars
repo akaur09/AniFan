@@ -1,17 +1,12 @@
-<div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
-    <div class="rounded overflow-hidden shadow-lg">
-        <img class="w-full" alt="Mountain" src="{{attributes.posterImage.tiny}}" id="animeHomePosterImage">
+<div class=" m-20 justify-items-center grid">
+    <div class="grid-flow-col">
+        <img class="grid-poster" src="{{attributes.posterImage.tiny}}" id="animeHomePosterImage">
         <div class="px-6 py-4">
             {{#if attributes.titles.en}}
-            <div class="font-bold text-xl mb-2" id="animeHomeTitle">{{attributes.titles.en}}</div>
+            <div class="font-bold text-m mb-2 overflow-ellipsis" id="animeHomeTitle">{{attributes.titles.en}}</div>
             {{else}}
-            <div class="font-bold text-xl mb-2" id="animeHomeTitle">{{attributes.titles.en_jp}}</div>
+            <div class="font-bold text-m mb-2  overflow-ellipsis" id="animeHomeTitle">{{attributes.titles.en_jp}}</div>
             {{/if}}
-        </div>
-        <div class="px-6 pt-4 pb-2">
-            <span id="genre1" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-            <span id="genre2" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-            <span id="genre3" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
         </div>
     </div>
 </div>
