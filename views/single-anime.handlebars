@@ -1,0 +1,29 @@
+<section>
+    <img class="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="{{attributes.posterImage.tiny}}" alt="anime poster image">
+    <div class="flex flex-col justify-between p-4 leading-normal">
+         {{#if attributes.titles.en}}
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{attributes.titles.en}}</h5>
+        {{else}}
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{attributes.titles.en_jp}}</h5>
+        {{/if}}
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{attributes.synopsis}}</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{attributes.status}}</p>
+    </div>
+   
+{{!-- 
+    <h2>Write A Review</h2>
+
+    <form class="new-review-form">
+        <div>
+            <label for="review-title"> title </label>
+            <input type="text" id="review-title" name="review-title"/>
+        </div>
+        <div>
+            <label for="review-text"></label>
+            <textarea id="review-text" name="review-text"></textarea>
+        </div>
+        <button type="submit" class="new-rev-btn">Post Review</button>
+    </form> --}}
+</section>
+
+{{!-- <script src="/public/js/addReviewData.js"></script> --}}
