@@ -93,6 +93,3 @@ router.delete('/:id',withAuth, async(req,res)=>{
 });
 
 module.exports = router;
-// single page will be linked to this
-// dashbpard page will also be linked to this
-// Amnider for now. Someone else might also work on this later on...

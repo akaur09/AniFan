@@ -58,4 +58,3 @@ router.delete('/:id',withAuth, async(req, res)=>{
 });
 
 module.exports = router;
-// comments feature might be deleted
