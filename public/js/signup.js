@@ -17,3 +17,4 @@ const signupFormHandler = async (event) =>{
         };
     }
 }
+document.querySelector('.form signup-form').addEventListener('submit',signupFormHandler);
