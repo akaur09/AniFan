@@ -1,11 +1,11 @@
-<div class=" m-20 justify-items-center grid">
+<div class=" m-10 justify-items-center grid">
     <div class="grid-flow-col">
-        <img class="grid-poster" src="{{attributes.posterImage.tiny}}" id="animeHomePosterImage">
+        <img class="grid-poster" src="{{attributes.posterImage.small}}" id="animeHomePosterImage">
         <div class="px-6 py-4">
             {{#if attributes.titles.en}}
-            <div class="font-bold text-m mb-2 overflow-ellipsis" id="animeHomeTitle">{{attributes.titles.en}}</div>
+            <div class="font-bold text-m text-white mb-2 overflow-ellipsis" id="animeHomeTitle">{{attributes.titles.en}}</div>
             {{else}}
-            <div class="font-bold text-m mb-2  overflow-ellipsis" id="animeHomeTitle">{{attributes.titles.en_jp}}</div>
+            <div class="font-bold text-m mb-2  text-white overflow-ellipsis" id="animeHomeTitle">{{attributes.titles.en_jp}}</div>
             {{/if}}
         </div>
     </div>
