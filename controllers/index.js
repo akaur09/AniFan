@@ -13,3 +13,4 @@ router.use('/recommendation', recommendationRoutes);
 router.use('/anime', singleAnimeRoutes);
 
 module.exports = router;
+

@@ -27,7 +27,7 @@ router.get('/', withAuth, (req,res) => {
     })
     .then(dbReviewData =>{
         const reviews = dbReviewData.map(review => review.get({plain: true}));
-        res.render('dashboard', {reviews, loggedIn: true});
+        res.render('dashboard', {reviews, logged_in: true});
     })
     .catch(err => {
         console.log(err)
@@ -64,7 +64,7 @@ router.get('/edit/:id', withAuth, (req,res)=> {
         const review = dbReviewData.get({plain: true});
         req.render('edit-review',{
             review, 
-            loggedIn: req.session.loggedIn
+            logged_in: true
         });
     })
     .catch(err => {
