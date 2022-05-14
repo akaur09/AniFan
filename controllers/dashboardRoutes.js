@@ -15,19 +15,11 @@ router.get('/', withAuth, (req,res) => {
                 model: User,
                 attributes: ['username']
             }
-            // {
-            //     // model: Comment,
-            //     // attributes: ['id','comment_text','review_id','user_id'],
-            //     // include: {
-            //     //     model: User,
-            //     //     attributes: ['username']
-            //     // }
-            // }
         ]
     })
     .then(dbReviewData =>{
         const reviews = dbReviewData.map(review => review.get({plain: true}));
-        res.render('dashboard', {reviews, loggedIn: true});
+        res.render('dashboard', {reviews, logged_in: true});
     })
     .catch(err => {
         console.log(err)
@@ -46,14 +38,6 @@ router.get('/edit/:id', withAuth, (req,res)=> {
                 model: User,
                 attributes: ['username']
             }
-            // {
-            //     // model: Comment,
-            //     // attributes: ['id','comment_text','review_id','user_id'],
-            //     // include: {
-            //     //     model: User,
-            //     //     attributes: ['username']
-            //     // }
-            // }
         ]
     })
     .then(dbReviewData =>{
@@ -64,7 +48,7 @@ router.get('/edit/:id', withAuth, (req,res)=> {
         const review = dbReviewData.get({plain: true});
         req.render('edit-review',{
             review, 
-            loggedIn: req.session.loggedIn
+            logged_in: true
         });
     })
     .catch(err => {
@@ -77,4 +61,3 @@ router.get('/create', withAuth, (req,res) =>{
 })
 
 module.exports = router;
-// Amnider
