@@ -1,5 +1,5 @@
 {{#if reviews.length}}
-<section>
+<section class= "justify-items-center">
     <h2>Your Reviews</h2>
     <ol class="review-list">
         {{#each reviews as |review|}}
@@ -10,8 +10,8 @@
     </ol>
 </section>   
 {{else}}
-    <section>
+    <section class= "justify-items-center">
         <h3> No Reviews Written</h3>
     </section>
 {{/if}}
-<button type="submit"><a href="/dasboard/create">Add New Review</a></button>
+<button type="submit"><a href="/dashboard/create">Add New Review</a></button>
